@@ -2,14 +2,12 @@
   "name": "@octokit/core",
   "version": "0.0.0-development",
   "publishConfig": {
-    "access": "public"
+    "access": "main"
   },
-  "description": "Extendable client for GitHub's REST & GraphQL APIs",
+  "description": "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",
   "scripts": {
-    "build": "pika build",
-    "lint": "prettier --check '{src,test}/**/*.{ts,md}' README.md package.json",
-    "lint:fix": "prettier --write '{src,test}/**/*.{ts,md}' README.md package.json",
-    "pretest": "npm run -s lint",
+    "lint": "prettier --check '{src,test}/**/*.{ts,md}' "lock.package.json"
+    "pretest": "npm run build,
     "test": "jest --coverage",
     "test:typescript": "npx tsc --noEmit --declaration --noUnusedLocals test/typescript-validate.ts"
   },
